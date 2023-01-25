@@ -4,6 +4,10 @@
     border:0;
 }
 
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
 .main-nav{
     width:100%;
     height:80px;
@@ -29,21 +33,23 @@
     top: 20px;
     left:90px;
     color:white;
-    font-family: montserrat black, sans-serif;
+    font-family: Montserrat black, sans-serif;
     font-size: 12px;
 
 }
 
 .goldColloredWords{
     color: #b89d0e;
+    font-weight:900;
 }
 
 .main-nav a{
     color:#b89d0e;
-    font-family: montserrat black, sans-serif;
+    font-family: Montserrat black, sans-serif;
     text-decoration: none;
     font-size: 10px;
     margin-right:50px;
+    transition:.3s;
 }
 
 .main-nav a:hover{
@@ -68,19 +74,168 @@ color:#b89d0e;
     background-color: black;
 }
 
+.banner-pattern{
+    display: none;
+}
+
 .banner-text{
     color:white;
-    font-family: montserrat black, sans-serif;
+    font-family: Montserrat black, sans-serif;
     font-size:38px;
     margin-left:50px;
     margin-top:100px;
+    font-weight: bolder;
+}
+
+.banner-text-container{
+display: flex;
+flex-direction: column;
+
+}
+
+.banner-img{
+    width:75%;
+    align-self: flex-end;
 }
 
 .small-banner-text{
     color:white;
-    font-family: montserrat regular, sans-serif;
-    font-size:12px; 
-    display: inline;
+    font-family: Montserrat regular, sans-serif;
+    font-size:14px; 
     height:100px;
+    width:60%;
+    margin-left:50px;
+    margin-top:20px;
+}
+
+
+
+.outline-button{
+    width:35%;
+    color:white;
+    background-color: black;
+    font-family: Montserrat black, sans-serif;
+    border: 3px solid #b89d0e;
+    padding: 10px;
+    font-size:16px;
+    margin-left:60px;
+    margin-bottom:60px;
+    transition:.3s;
+}
+
+.outline-button:hover{
+    color:#b89d0e;
+    background-color: white;
 
 }
+
+
+@media screen and (max-width: 1063px) {
+
+    .banner-img{
+        width:50%;
+        align-self: center;
+    }
+
+    .banner-text{
+        font-size:25px;
+    }
+
+    .outline-button{
+        font-size: 12px;
+    }
+    
+    .small-banner-text {
+        font-size: 15px; /* Decrease the font size */
+        width: 70%; /* Decrease the width */
+        margin-top: 10px; /* Decrease the top margin */
+    }
+}
+
+
+@media screen and (max-width: 850px) {
+    .banner-img{
+        width:50%;
+        align-self: center;
+    }
+
+    .banner-text{
+        font-size:28px;
+        margin-top: 50px;
+    }
+
+    .small-banner-text{
+        margin:20px 50px;
+    }
+
+    .outline-button{
+        margin-bottom: 30px;
+    }
+
+    .small-banner-text {
+        font-size: 13px; 
+        width: 80%; 
+        margin-left: 50px; 
+        margin-top: 5px; 
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .banner{
+        align-items: flex-start;
+    }
+
+    .banner-img{
+        display:none;
+    }
+
+    .banner-text{
+        font-size:26px;
+    }
+
+    .small-banner-text {
+        font-size: 15px; 
+        width: 90%; 
+      }
+
+    .main-nav a{
+        display: none;
+    }
+
+    .banner-pattern{
+        display: inline;
+        align-self: flex-start;
+        margin-right: 0px;
+    }
+
+    .outline-button {
+        width: 60%; 
+        font-size: 14px; 
+        margin-left: 20px; 
+        margin-bottom: 20px; 
+    }
+
+      
+}
+
+@media only screen and (max-width: 480px) {
+
+    .banner-text{
+        font-size:32px;
+    }
+    .small-banner-text {
+        font-size: 15px; 
+        width: 100%; 
+        margin-top: 20px; 
+        text-align: center; 
+        margin-left: 0px;
+      }
+
+    .outline-button {
+      width: 80%; 
+      font-size: 14px; 
+      margin-left: 30px; 
+      margin-bottom: 30px; 
+      font-weight: 900;
+    }
+  }
