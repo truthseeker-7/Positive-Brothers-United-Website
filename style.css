@@ -82,7 +82,7 @@ color:#e2bd00;
     font-size:38px;
     margin-left:50px;
     margin-top:100px;
-    font-weight: bolder;
+    
 }
 
 .banner-text-container{
@@ -291,6 +291,10 @@ li::before {
     font-weight: 500;
 }
 
+.section-who input[type="button"] {
+    display: block; 
+    margin: 0 auto; 
+}
 
 /* ================================================= FOOTER ================================================= */
 
