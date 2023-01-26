@@ -137,6 +137,61 @@ flex-direction: column;
 
 /* ================================================= SERVICES SECTION ================================================= */
 
+.services-section{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    width:100%;
+    background: red;
+    grid-gap:0;
+}
+
+.services-section div{
+    width:100%;
+    background:black;
+}
+
+.services-section div img{
+    width:100%;
+    transition:.3s;
+}
+
+.services-section div img:hover{
+    transform: scale(1.2);
+}
+
+.services-section-header{
+    padding:30px;
+    font-weight: 900;
+    font-size:16px;
+    text-align: center;
+}
+
+.services-section ul{
+    color:white;
+    padding:30px;
+    padding-top:0px;
+    font-size:14px;
+    font-weight: bold;
+    list-style: none;
+}
+
+li::before {
+    content: '';
+    background:#b89d0e;
+    display: inline-block;
+    width: .5em;
+    height:.5em;
+    border-radius: 100%;
+    margin-right: 15px;
+  }
+
+.services-section ul li{
+    padding: 10px;
+}
+
+
+
+
 /* ================================================= PURPOSE SECTION ================================================= */
 
 
