@@ -147,15 +147,16 @@ flex-direction: column;
 .services-section div{
     width:100%;
     background:black;
+    transition:.3s;
+}
+
+.services-section div:hover{
+    transform: scale(1.1);
 }
 
 .services-section div img{
     width:100%;
     transition:.3s;
-}
-
-.services-section div img:hover{
-    transform: scale(1.2);
 }
 
 .services-section-header{
@@ -291,12 +292,56 @@ li::before {
     font-weight: 500;
 }
 
-.section-who input[type="button"] {
+.section-who input{
     display: block; 
     margin: 0 auto; 
+    border: 3px solid black;
 }
 
 /* ================================================= FOOTER ================================================= */
+
+footer{
+    background:black;
+    margin-top: 30px;
+    padding-top: 30px;
+}
+
+footer a{
+    font-size: 12px;
+    color:white;
+    text-decoration:none;
+    font-weight: 600;
+    transition:.3s;
+}
+
+footer a:hover{
+    color:#e2bd00;
+}
+
+footer a:first-child{
+    margin-left:25%;
+}
+
+.line{
+    color:white;
+    margin-left:40px;
+    margin-right:40px;
+}
+
+.footer-container{
+    display: grid;
+    padding:30px;
+}
+
+.footer-container p{
+    color:white;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+
+
+/* ================================================= MEDIA QUERIES ================================================= */
 
 
 @media screen and (min-width: 1200px){
