@@ -41,7 +41,7 @@ body{
 
 
 .main-nav a{
-    color:#b89d0e;
+    color:#e2bd00;
     font-family: Montserrat, sans-serif;
     text-decoration: none;
     font-size: 15px;
@@ -55,7 +55,7 @@ body{
 }
 
 .main-nav :last-child{
-    background-color: #b89d0e;
+    background-color: #e2bd00;
     color:white;
     padding:5px;
     transition: .3s;
@@ -63,7 +63,7 @@ body{
 
 .main-nav :last-child:hover{
 background-color: white;
-color:#b89d0e;
+color:#e2bd00;
 }
 
 .banner{
@@ -113,7 +113,7 @@ flex-direction: column;
     color:white;
     background-color: black;
     font-family: Montserrat, sans-serif;
-    border: 3px solid #b89d0e;
+    border: 3px solid #e2bd00;
     padding: 10px;
     font-size:16px;
     font-weight: 900;
@@ -123,13 +123,13 @@ flex-direction: column;
 }
 
 .outline-button:hover{
-    color:#b89d0e;
+    color:#e2bd00;
     background-color: white;
 
 }
 
 .goldColloredWords{
-    color: #b89d0e;
+    color: #e2bd00;
     font-weight:bolder;
 }
 
@@ -170,13 +170,13 @@ flex-direction: column;
     padding:30px;
     padding-top:0px;
     font-size:14px;
-    font-weight: bold;
+    font-weight: 400;
     list-style: none;
 }
 
 li::before {
     content: '';
-    background:#b89d0e;
+    background:#e2bd00;
     display: inline-block;
     width: .5em;
     height:.5em;
@@ -224,7 +224,7 @@ li::before {
 
 
 .filled-button:hover{
-    color:#b89d0e;
+    color:black;
     background-color: white;
 
 }
@@ -242,6 +242,7 @@ li::before {
 
 .section-purpose-right ul{
     padding: 50px;
+    font-weight: 400;
 }
 
 .section-purpose-right ul li{
@@ -252,6 +253,46 @@ li::before {
 
 
 /* ================================================= WHO ARE WE? SECTION ================================================= */
+
+.section-who .container{
+    display: grid;
+    grid-template-columns:repeat(3, 1fr);
+    width:100%;
+}
+
+.section-who h2{
+    text-align:center;
+    margin-top:30px; 
+    font-weight: bolder;
+}
+
+.section-who img{
+    width: 85%;
+    border: 15px solid #e2bd00;
+    padding:15px;
+    transition: .3s;
+}
+
+.section-who img:hover{
+    transform: scale(1.1);
+}
+
+.section-who .container div{
+    padding: 30px;
+}
+
+.section-who h3{
+    text-align: center;
+    margin:20px 0;
+}
+
+.section-who p{
+    font-size: 16px;
+    font-weight: 500;
+}
+
+
+/* ================================================= FOOTER ================================================= */
 
 
 @media screen and (min-width: 1200px){
@@ -343,6 +384,9 @@ li::before {
         font-size:16px;
     }
 
+    .section-who p{
+        font-size: 14px;
+    }
  
 
 
@@ -384,6 +428,10 @@ li::before {
     .section-purpose{
         grid-template-columns: 1fr;
     }
+
+    .section-who p{
+        font-size: 12px;
+    }
       
 }
 
@@ -414,6 +462,10 @@ li::before {
     .filled-button{
         width:50%;
         margin:15px 25%;
+    }
+
+    .section-who .container{
+        grid-template-columns:1fr;
     }
     
   }
