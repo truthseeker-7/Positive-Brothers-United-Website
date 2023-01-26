@@ -141,7 +141,6 @@ flex-direction: column;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     width:100%;
-    background: red;
     grid-gap:0;
 }
 
@@ -166,7 +165,7 @@ flex-direction: column;
     text-align: center;
 }
 
-.services-section ul{
+.goldenBulletList{
     color:white;
     padding:30px;
     padding-top:0px;
@@ -193,6 +192,62 @@ li::before {
 
 
 /* ================================================= PURPOSE SECTION ================================================= */
+
+.section-purpose{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+
+.section-purpose-left{
+    background:#eee;
+}
+
+.section-purpose-left p{
+    font-size: 18px;
+    padding:50px;
+
+}
+
+.filled-button{
+    width:35%;
+    color:white;
+    background-color: black;
+    font-family: Montserrat, sans-serif;
+    padding: 10px;
+    font-size:18px;
+    font-weight: bolder;
+    margin-left:60px;
+    margin-bottom:60px;
+    transition:.3s;
+}
+
+
+.filled-button:hover{
+    color:#b89d0e;
+    background-color: white;
+
+}
+
+.section-purpose-right{
+    background:black;
+}
+
+.section-purpose-header{
+    color:white;
+    margin-top: 30px;
+    margin-left:50px;
+
+}
+
+.section-purpose-right ul{
+    padding: 50px;
+}
+
+.section-purpose-right ul li{
+    padding: 10px;
+}
+
 
 
 
@@ -239,6 +294,10 @@ li::before {
         margin-top: 10px; 
     }
 
+    .services-section ul{
+        font-size:12px;
+    }
+
 }
 
 
@@ -246,6 +305,10 @@ li::before {
     .banner-img{
         width:50%;
         align-self: center;
+    }
+
+    .main-nav a{
+        font-size:10px;
     }
 
     .banner-text{
@@ -267,6 +330,20 @@ li::before {
         margin-left: 50px; 
         margin-top: 5px; 
     }
+
+    .services-section{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .section-purpose-right ul{
+        font-size: 14px;
+    }
+
+    .filled-button{
+        font-size:16px;
+    }
+
+ 
 
 
 @media screen and (max-width: 700px) {
@@ -303,6 +380,10 @@ li::before {
         margin-left: 20px; 
         margin-bottom: 20px; 
     }
+
+    .section-purpose{
+        grid-template-columns: 1fr;
+    }
       
 }
 
@@ -326,5 +407,14 @@ li::before {
       margin-bottom: 30px; 
       font-weight: 900;
     }
-  }
+    .services-section{
+        grid-template-columns: 1fr;
+    }
 
+    .filled-button{
+        width:50%;
+        margin:15px 25%;
+    }
+    
+  }
+}
