@@ -19,6 +19,7 @@ body{
     justify-content: flex-end;
 }
 
+
 #logo{
      position: absolute;
      position: absolute;
@@ -39,6 +40,17 @@ body{
 
 }
 
+.hamburger{
+    margin-right: 15px;
+    display: none;
+}
+
+.menu-line{
+    width:25px;
+    height:3px;
+    margin-top:5px;
+    background:#e2bd00;
+}
 
 .main-nav a{
     color:#e2bd00;
@@ -54,16 +66,16 @@ body{
     color:white;
 }
 
-.main-nav :last-child{
+.main-nav #donate-btn{
     background-color: #e2bd00;
     color:white;
     padding:5px;
     transition: .3s;
 }
 
-.main-nav :last-child:hover{
-background-color: white;
-color:#e2bd00;
+#donate-btn:hover{
+    background-color: white;
+    color:#e2bd00;
 }
 
 .banner{
@@ -318,14 +330,14 @@ footer a:hover{
     color:#e2bd00;
 }
 
-footer a:first-child{
-    margin-left:25%;
-}
-
 .line{
     color:white;
     margin-left:40px;
     margin-right:40px;
+}
+
+footer a:first-child{
+    margin-left:25%;
 }
 
 .footer-container{
@@ -449,7 +461,8 @@ footer a:first-child{
     }
 
     .banner-text{
-        font-size:26px;
+        font-size:24px;
+        margin-top: 100px;
     }
 
     .small-banner-text {
@@ -457,14 +470,52 @@ footer a:first-child{
         width: 90%; 
       }
 
+      
+    .hamburger{
+        display: block;
+        position: absolute;
+        top:20px;
+        right:10px;
+    }
+
+    .main-nav.active{
+        height:450px;
+    }
+
+
+    .main-nav{
+        display:grid;
+        position:absolute;
+        width:100vw;
+        height:0px;
+        left:0;
+        transition:.2s;
+        justify-content: center;
+        z-index: 1;
+    }
+
+    .main-nav.active a{
+        opacity: 1;
+    }
+
     .main-nav a{
-        display: none;
+        width:fit-content;
+        display: block;
+        margin-top:20px;
+        margin-left:60px;
+        font-size: 13px;
+        opacity: 0;
+    }
+
+    #home-btn{
+        margin-top: 60px;
     }
 
     .banner-pattern{
         display: inline;
         align-self: flex-start;
         margin-right: 0px;
+        margin-top: 30px;
     }
 
     .outline-button {
