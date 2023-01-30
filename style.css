@@ -320,6 +320,7 @@ footer{
     grid-template-columns: 1fr, 2fr, 1fr;
     grid-template-rows: 1fr 1fr;
     grid-gap: 20px;
+    overflow: hidden;
     grid-template-areas: 
     "l n n n ."
     "l c c c s";
@@ -553,7 +554,7 @@ footer a:hover{
     }
 
     .section-purpose{
-        grid-template-columns: 1fr, 1fr, 1fr;
+        grid-template-columns: 1fr;
     }
 
     
